@@ -208,8 +208,7 @@ public class AndroidSmsRetriever extends CordovaPlugin {
             case CommonStatusCodes.SUCCESS:
               final String message = extra.getString(SmsRetriever.EXTRA_SMS_MESSAGE);
               //if (!StringUtils.hasContent(message)) return;
-
-              Log.d(TAG, message);
+ 
               if (message != null) { 
                 data = new JSONObject();
                 try {
